@@ -1,0 +1,85 @@
+.root {
+	@apply flex h-full w-full min-h-0 min-w-0 items-stretch gap-2 sm:gap-4;
+}
+
+.column {
+	@apply flex min-h-0 min-w-0 flex-1 flex-col gap-3;
+}
+
+.column__title {
+	@apply text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--color-text-quaternary)] sm:text-[11px];
+}
+
+.stack {
+	@apply flex flex-1 flex-col gap-2;
+}
+
+.input__card {
+	@apply rounded-lg border border-[#2a2a2a] bg-[#161718]/90 p-2.5 sm:p-3;
+}
+
+.input__card__top {
+	@apply mb-2 flex items-center gap-2;
+}
+
+.input__card__label {
+	@apply text-[11px] font-medium text-[var(--color-text-tertiary)] sm:text-[12px];
+}
+
+.icon {
+	@apply shrink-0 text-[var(--color-text-quaternary)];
+}
+
+.input__lines {
+	@apply flex flex-col gap-1.5;
+}
+
+.input__lines span {
+	@apply block h-[3px] rounded-full bg-white/[0.08];
+}
+
+.input__lines__short {
+	@apply w-[55%];
+}
+
+.input__thumb {
+	@apply h-10 rounded-md bg-gradient-to-br from-white/[0.07] to-white/[0.02] ring-1 ring-inset ring-white/[0.06];
+}
+
+.mini__table {
+	@apply grid grid-cols-3 gap-1;
+}
+
+.mini__table__cell {
+	@apply aspect-[2/1] rounded-[2px] bg-white/[0.06];
+}
+
+.flow {
+	@apply relative flex w-[72px] shrink-0 flex-col items-center justify-center gap-2 sm:w-[100px];
+}
+
+.flow__svg {
+	@apply h-[min(200px,38vh)] w-full max-w-[100px] opacity-90;
+}
+
+.flow__badge {
+	@apply max-w-[9rem] text-center text-[9px] font-medium leading-tight text-[var(--color-text-quaternary)] sm:text-[10px];
+}
+
+.output__panel {
+	@apply flex flex-1 flex-col rounded-lg border border-[#2a2a2a] bg-[#121314]/95 p-3 sm:p-4;
+}
+
+.output__code {
+	@apply m-0 flex-1 overflow-hidden font-mono text-[9px] leading-relaxed text-[#8eb88a] sm:text-[10px];
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.output__meta {
+	@apply mt-3 flex flex-wrap gap-1.5 border-t border-white/[0.06] pt-3;
+}
+
+.pill {
+	@apply rounded-md border border-white/[0.08] bg-white/[0.04] px-2 py-0.5 text-[9px] font-medium text-[var(--color-text-tertiary)] sm:text-[10px];
+}

@@ -1,9 +1,6 @@
 import { type FC } from "react";
 import styles from "./styles.module.css";
 import LayoutWrapper from "@/components/layout-wrapper";
-import CustomerList from "./components/customer-list";
-import { ChevronRight } from "lucide-react";
-import Link from "next/link";
 import CustomerMarquee from "./components/customer-marquee";
 
 const Customers: FC = () => {
@@ -14,12 +11,10 @@ const Customers: FC = () => {
           <span className={styles.highlight}>
             Built for modern enterprises handling complex data.
           </span>
-          <br />
         </p>
 
         <p className={styles.description__small__screen}>
-          Built for modern enterprises handling complex data. Trusted by teams
-          processing millions of documents.
+          Built for modern enterprises handling complex data.
         </p>
 
         {/* <div className={styles.customer__list__container}>

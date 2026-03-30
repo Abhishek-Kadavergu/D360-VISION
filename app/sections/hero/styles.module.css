@@ -85,7 +85,6 @@
 
 .hero .hero__img__container .hero__illustration__container {
 	@apply h-[600px] sm:h-[900px] w-full select-none pointer-events-none;
-	--Sidebar-width: 260px;
 }
 
 .hero
@@ -111,22 +110,25 @@
 	transform-style: preserve-3d;
 }
 
-.hero__illustration__sidebar {
-	@apply w-[var(--Sidebar-width)] py-4 px-[14px];
+.hero__illustration__canvas {
+	@apply absolute left-0 right-0 h-full overflow-hidden rounded-md;
+	inset-block: 8px;
+	padding: 12px 14px;
 	transform-style: preserve-3d;
 }
 
-.hero__illustration__inbox {
-	@apply absolute left-[var(--Sidebar-width)] h-full;
-	inset-block: 8px;
+@media (min-width: 640px) {
+	.hero__illustration__canvas {
+		padding: 20px 24px;
+	}
 }
 
-.hero__illustration__inbox::after {
-	@apply content-[''] pointer-events-none absolute -inset-2;
+.hero__illustration__canvas::after {
+	@apply content-[''] pointer-events-none absolute inset-0 z-[1];
 	background: linear-gradient(
 		to right,
-		transparent 80%,
-		var(--color-bg-primary) 90%
+		transparent 72%,
+		var(--color-bg-primary) 96%
 	);
 }
 

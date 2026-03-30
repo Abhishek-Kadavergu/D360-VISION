@@ -4,18 +4,15 @@ import LayoutWrapper from "@/components/layout-wrapper";
 import BlurPopUpByWord from "@/components/blur-pop-up-by-words";
 import { cn } from "@/lib/utils";
 import BlurPopUp from "@/components/blur-pop-up";
-import Link from "next/link";
-import { ChevronRight } from "lucide-react";
-import Inbox from "@/assets/inbox.svg";
-import Sidebar from "./components/sidebar";
 import IllustrateAnimate from "@/components/illustrate-animate";
+import VisionIllustration from "./components/vision-illustration";
 
 const Hero: FC = () => {
   return (
     <section className={styles.hero}>
       <LayoutWrapper>
         <p className={cn(styles.hero__eyebrow, styles.hide__mobile)}>
-          Vision AI Platform
+          D360 VISION
         </p>
         <p
           className={cn(
@@ -82,15 +79,12 @@ const Hero: FC = () => {
                 AI Understanding Engine
               </p>
               <div className={styles.hero__illustration__base}>
-                <div className={styles.hero__illustration__sidebar}>
-                  <Sidebar />
-                </div>
                 <IllustrateAnimate
                   delay={2}
                   duration={1.4}
-                  className={styles.hero__illustration__inbox}
+                  className={styles.hero__illustration__canvas}
                 >
-                  <Inbox />
+                  <VisionIllustration />
                 </IllustrateAnimate>
               </div>
             </div>
