@@ -5,7 +5,10 @@ import LayoutWrapper from '@/components/layout-wrapper'
 
 const PreFooter: FC = () => {
 	return (
-		<section className={styles.prefooter}>
+		<section
+			id='cta'
+			className={`${styles.prefooter} scroll-mt-[calc(var(--header-top)+var(--header-height)+12px)]`}
+		>
 			<LayoutWrapper>
 				<div className={styles.grid__container}>
 					<div className=''>

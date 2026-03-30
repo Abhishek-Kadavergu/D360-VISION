@@ -9,7 +9,10 @@ import VisionIllustration from "./components/vision-illustration";
 
 const Hero: FC = () => {
   return (
-    <section className={styles.hero}>
+    <section
+      id="hero"
+      className={`${styles.hero} scroll-mt-[calc(var(--header-top)+var(--header-height)+12px)]`}
+    >
       <LayoutWrapper>
         <p className={cn(styles.hero__eyebrow, styles.hide__mobile)}>
           D360 VISION

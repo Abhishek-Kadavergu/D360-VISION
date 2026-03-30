@@ -17,34 +17,34 @@ export const footerSections: FooterSection[] = [
 		title: 'Platform',
 		items: [
 			{
-				id: 'footer-section-11',
-				link: '#',
+				id: 'footer-platform-hero',
+				link: '/#hero',
+				item: 'Overview',
+			},
+			{
+				id: 'footer-platform-customers',
+				link: '/#customers',
+				item: 'Customers',
+			},
+			{
+				id: 'footer-platform-product',
+				link: '/#platform',
+				item: 'Platform',
+			},
+			{
+				id: 'footer-platform-capabilities',
+				link: '/#capabilities',
 				item: 'Capabilities',
 			},
 			{
-				id: 'footer-section-12',
-				link: '#',
-				item: 'Pricing',
+				id: 'footer-platform-use-cases',
+				link: '/#use-cases',
+				item: 'Use Cases',
 			},
 			{
-				id: 'footer-section-13',
-				link: '#',
-				item: 'Changelog',
-			},
-			{
-				id: 'footer-section-14',
-				link: '#',
-				item: 'Documentation',
-			},
-			{
-				id: 'footer-section-15',
-				link: '#',
-				item: 'API reference',
-			},
-			{
-				id: 'footer-section-16',
-				link: '#',
-				item: 'Security',
+				id: 'footer-platform-cta',
+				link: '/#cta',
+				item: 'Get started',
 			},
 		],
 	},
@@ -52,94 +52,9 @@ export const footerSections: FooterSection[] = [
 		title: 'Company',
 		items: [
 			{
-				id: 'footer-section-21',
-				link: '#',
-				item: 'About',
-			},
-			{
-				id: 'footer-section-22',
-				link: '#',
-				item: 'Blog',
-			},
-			{
-				id: 'footer-section-23',
-				link: '#',
-				item: 'Careers',
-			},
-			{
-				id: 'footer-section-24',
-				link: '#',
-				item: 'Customers',
-			},
-			{
-				id: 'footer-section-25',
-				link: '#',
-				item: 'Partners',
-			},
-		],
-	},
-	{
-		title: 'Resources',
-		items: [
-			{
-				id: 'footer-section-31',
-				link: '#',
-				item: 'Support',
-			},
-			{
-				id: 'footer-section-32',
-				link: '#',
-				item: 'Community',
-			},
-			{
-				id: 'footer-section-33',
-				link: '#',
-				item: 'Contact',
-			},
-			{
-				id: 'footer-section-34',
-				link: '#',
-				item: 'DPA',
-			},
-			{
-				id: 'footer-section-35',
-				link: '#',
-				item: 'Privacy',
-			},
-			{
-				id: 'footer-section-36',
-				link: '#',
-				item: 'Terms',
-			},
-			{
-				id: 'footer-section-37',
-				link: '#',
-				item: 'Report a vulnerability',
-			},
-		],
-	},
-	{
-		title: 'Developers',
-		items: [
-			{
-				id: 'footer-section-41',
-				link: '#',
-				item: 'API',
-			},
-			{
-				id: 'footer-section-42',
-				link: '#',
-				item: 'Status',
-			},
-			{
-				id: 'footer-section-43',
-				link: '#',
-				item: 'GitHub',
-			},
-			{
-				id: 'footer-section-44',
-				link: '#',
-				item: 'SDKs',
+				id: 'footer-company-pcg',
+				link: 'https://piazza-website-beta.vercel.app/',
+				item: 'Piazza Consulting Group',
 			},
 		],
 	},

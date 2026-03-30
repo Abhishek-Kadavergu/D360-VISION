@@ -6,7 +6,10 @@ import LayoutWrapper from '@/components/layout-wrapper'
 
 const Collaborate: FC = () => {
 	return (
-		<section className={styles.collaborate}>
+		<section
+			id='use-cases'
+			className={`${styles.collaborate} scroll-mt-[calc(var(--header-top)+var(--header-height)+12px)]`}
+		>
 			<LayoutWrapper>
 				<div className={styles.heading__container}>
 					<div className={styles.heading__inner__container}>

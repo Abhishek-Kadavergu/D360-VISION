@@ -1,5 +1,4 @@
 import { type FC } from 'react'
-import Logo from '@/assets/logo.svg'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import { Menu } from 'lucide-react'
@@ -12,74 +11,28 @@ const Header: FC = () => {
 			<div className={styles.header__overlay}></div>
 			<header className={styles.header__wrapper}>
 				<nav className={styles.header__root}>
-					<div className='relative'>
+					<div className={styles.header__inner}>
 						<ul className={styles.header__list}>
-							<li className={cn(styles.header__logo, styles.header__item)}>
-								<Link href='/' className={styles.header__logo__link}>
-									<Logo />
-								</Link>
-							</li>
-
-							<li className={cn(styles.hide__mobile, styles.header__trigger)}>
-								<Link className={styles.header__link} href='#'>
-									{' '}
-									Platform{' '}
-								</Link>
-							</li>
-
-							<li className={cn(styles.hide__laptop, styles.header__item)}>
-								<Link className={styles.header__link} href='#'>
-									{' '}
-									Solutions{' '}
-								</Link>
-							</li>
-
-							<li className={cn(styles.hide__laptop, styles.header__item)}>
-								<Link className={styles.header__link} href='#'>
-									{' '}
-									Enterprise{' '}
-								</Link>
-							</li>
-
-							<li className={cn(styles.hide__tablet, styles.header__item)}>
-								<Link className={styles.header__link} href='#'>
-									{' '}
-									Docs{' '}
-								</Link>
-							</li>
-
-							<li className={cn(styles.hide__mobile, styles.header__item)}>
-								<Link className={styles.header__link} href='#'>
-									{' '}
-									Pricing{' '}
-								</Link>
-							</li>
-
-							<li className={cn(styles.hide__mobile, styles.header__trigger)}>
-								<Link className={styles.header__link} href='#'>
-									{' '}
-									Company{' '}
-								</Link>
-							</li>
-
-							<li className={cn(styles.hide__tablet, styles.header__item)}>
-								<Link className={styles.header__link} href='#'>
-									{' '}
-									Contact{' '}
+							<li className={cn(styles.header__brand, styles.header__item)}>
+								<Link href='/' className={styles.header__brand__link}>
+									<span className={styles.header__brand__text}>D360 VISION</span>
 								</Link>
 							</li>
 
 							<li
 								className={cn(
+									styles.header__nav,
+									styles.hide__mobile,
 									styles.header__item,
-									styles.header__button,
-									styles.header__login,
 								)}>
-								<Link
-									className={cn(styles.header__link, styles.button__login)}
-									href='#'>
-									{' '}
-									Log in <kbd className={styles.header__kbd}> L </kbd>
+								<Link className={styles.header__link} href='/#platform'>
+									Platform
+								</Link>
+								<Link className={styles.header__link} href='/#capabilities'>
+									Capabilities
+								</Link>
+								<Link className={styles.header__link} href='/#use-cases'>
+									Use Cases
 								</Link>
 							</li>
 
@@ -92,7 +45,6 @@ const Header: FC = () => {
 								<Link
 									className={cn(styles.header__link, styles.button__signup)}
 									href='#'>
-									{' '}
 									Get Started
 								</Link>
 							</li>
@@ -103,7 +55,7 @@ const Header: FC = () => {
 									styles.header__button,
 									styles.header__menu,
 								)}>
-								<button>
+								<button type='button' aria-label='Open menu'>
 									<Menu />
 								</button>
 							</li>

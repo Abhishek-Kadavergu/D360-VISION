@@ -6,7 +6,9 @@ import styles from './styles.module.css'
 
 const ModernProductTeams: FC = () => {
 	return (
-		<section className={styles.modern__product__teams}>
+		<section
+			id='platform'
+			className={`${styles.modern__product__teams} scroll-mt-[calc(var(--header-top)+var(--header-height)+12px)]`}>
 			<LayoutWrapper>
 				<SectionHeading />
 			</LayoutWrapper>

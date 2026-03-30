@@ -21,7 +21,10 @@ import WideCard from "./components/wide-card";
 
 const LongTermPlanning: FC = () => {
   return (
-    <section className={styles.long__term__planning}>
+    <section
+      id="capabilities"
+      className={`${styles.long__term__planning} scroll-mt-[calc(var(--header-top)+var(--header-height)+12px)]`}
+    >
       <LayoutWrapper>
         <div className={styles.heading__container}>
           <div className={styles.heading__inner__container}>

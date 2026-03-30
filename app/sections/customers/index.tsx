@@ -5,7 +5,10 @@ import CustomerMarquee from "./components/customer-marquee";
 
 const Customers: FC = () => {
   return (
-    <section className={styles.customers}>
+    <section
+      id="customers"
+      className={`${styles.customers} scroll-mt-[calc(var(--header-top)+var(--header-height)+12px)]`}
+    >
       <LayoutWrapper>
         <p className={styles.description__large__screen}>
           <span className={styles.highlight}>

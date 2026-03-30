@@ -3,6 +3,8 @@ import { type FooterSection } from '@/lib/constant'
 import styles from './styles.module.css'
 import Link from 'next/link'
 
+const isExternal = (href: string) => /^https?:\/\//i.test(href)
+
 const FooterSection: FC<FooterSection> = ({ items, title }) => {
 	return (
 		<div className={styles.footer__section}>
@@ -10,7 +12,16 @@ const FooterSection: FC<FooterSection> = ({ items, title }) => {
 			<ul className={styles.footer__section__list}>
 				{items.map(({ id, item, link }) => (
 					<li key={id} className={styles.item}>
-						<Link href={link}> {item} </Link>
+						<Link
+							href={link}
+							{...(isExternal(link)
+								? {
+										target: '_blank',
+										rel: 'noopener noreferrer',
+									}
+								: {})}>
+							{item}
+						</Link>
 					</li>
 				))}
 			</ul>
