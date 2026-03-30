@@ -4,6 +4,9 @@ import LayoutWrapper from "@/components/layout-wrapper";
 import BlurPopUpByWord from "@/components/blur-pop-up-by-words";
 import { cn } from "@/lib/utils";
 import BlurPopUp from "@/components/blur-pop-up";
+import Link from "next/link";
+import { ChevronRight } from "lucide-react";
+import { GET_STARTED_PATH } from "@/lib/routes";
 import IllustrateAnimate from "@/components/illustrate-animate";
 import VisionIllustration from "./components/vision-illustration";
 
@@ -56,20 +59,20 @@ const Hero: FC = () => {
           </ul>
         </BlurPopUp>
 
-        {/* <div className={cn(styles.button__container)}>
-					<BlurPopUp delay={1.1}>
-						<Link className={styles.start__link} href='#'>
-							Request Demo
-						</Link>
-					</BlurPopUp>
+        <div className={cn(styles.button__container)}>
+          {/* <BlurPopUp delay={1.1}>
+            <Link className={styles.start__link} href={GET_STARTED_PATH}>
+              Request Demo
+            </Link>
+          </BlurPopUp> */}
 
-					<BlurPopUp delay={1.15}>
-						<Link className={styles.intoducing__link} href='#'>
-							<span>Get Started</span>
-							<ChevronRight />
-						</Link>
-					</BlurPopUp>
-				</div> */}
+          {/* <BlurPopUp delay={1.15}>
+            <Link className={styles.intoducing__link} href={GET_STARTED_PATH}>
+              <span>Get Started</span>
+              <ChevronRight />
+            </Link>
+          </BlurPopUp> */}
+        </div>
 
         <BlurPopUp delay={1.2}>
           <p className={styles.hero__trust}>Built with proprietary AI by PCG</p>

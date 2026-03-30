@@ -28,7 +28,7 @@
 }
 
 .left__container .social__icons {
-	@apply flex items-center gap-3 lg:gap-6;
+	@apply flex items-center gap-3 lg:gap-6 mt-4 sm:mt-5 lg:mt-6;
 }
 
 .footer__section {

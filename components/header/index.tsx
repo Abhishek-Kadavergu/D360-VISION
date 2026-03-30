@@ -1,5 +1,6 @@
 import { type FC } from 'react'
 import Link from 'next/link'
+import { GET_STARTED_PATH } from '@/lib/routes'
 import { cn } from '@/lib/utils'
 import { Menu } from 'lucide-react'
 import styles from './styles.module.css'
@@ -44,7 +45,7 @@ const Header: FC = () => {
 								)}>
 								<Link
 									className={cn(styles.header__link, styles.button__signup)}
-									href='#'>
+									href={GET_STARTED_PATH}>
 									Get Started
 								</Link>
 							</li>

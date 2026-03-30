@@ -2,6 +2,7 @@ import { type FC } from 'react'
 import styles from './styles.module.css'
 import Link from 'next/link'
 import LayoutWrapper from '@/components/layout-wrapper'
+import { GET_STARTED_PATH } from '@/lib/routes'
 
 const PreFooter: FC = () => {
 	return (
@@ -25,10 +26,10 @@ const PreFooter: FC = () => {
 
 					<div className={styles.links__outter__container}>
 						<div className={styles.links__inner__container}>
-							<Link className={styles.get__started__link} href='/'>
+							<Link className={styles.get__started__link} href={GET_STARTED_PATH}>
 								Request Demo
 							</Link>
-							<Link className={styles.talk__to__sales} href='/'>
+							<Link className={styles.talk__to__sales} href={GET_STARTED_PATH}>
 								Get Started
 							</Link>
 						</div>

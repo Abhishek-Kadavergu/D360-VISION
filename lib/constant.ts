@@ -1,6 +1,7 @@
 import { type ReactNode } from 'react'
 import { type UserCardProps } from '@/app/sections/issue-tracking/components/user-card'
 import { CarouselCardProps } from '@/app/sections/modern-product-teams/components/carousel-card'
+import { GET_STARTED_PATH } from '@/lib/routes'
 
 type FooterListItem = {
 	id: string | number
@@ -17,21 +18,6 @@ export const footerSections: FooterSection[] = [
 		title: 'Platform',
 		items: [
 			{
-				id: 'footer-platform-hero',
-				link: '/#hero',
-				item: 'Overview',
-			},
-			{
-				id: 'footer-platform-customers',
-				link: '/#customers',
-				item: 'Customers',
-			},
-			{
-				id: 'footer-platform-product',
-				link: '/#platform',
-				item: 'Platform',
-			},
-			{
 				id: 'footer-platform-capabilities',
 				link: '/#capabilities',
 				item: 'Capabilities',
@@ -43,7 +29,7 @@ export const footerSections: FooterSection[] = [
 			},
 			{
 				id: 'footer-platform-cta',
-				link: '/#cta',
+				link: GET_STARTED_PATH,
 				item: 'Get started',
 			},
 		],

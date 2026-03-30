@@ -1,0 +1,54 @@
+.main {
+	@apply min-h-screen pt-[calc(var(--header-top)+var(--header-height)+48px)] pb-24 px-4;
+}
+
+.inner {
+	@apply mx-auto w-full max-w-[520px];
+}
+
+.title {
+	@apply text-[32px] sm:text-[40px] font-medium tracking-[-0.02em] text-[var(--color-text-primary)] text-balance mb-2;
+	font-variation-settings: 'opsz' 28;
+}
+
+.lede {
+	@apply text-[17px] leading-relaxed font-medium text-[var(--color-text-tertiary)] mb-10;
+}
+
+.form {
+	@apply flex flex-col gap-6;
+}
+
+.field {
+	@apply flex flex-col gap-1.5;
+}
+
+.label {
+	@apply text-[13px] font-medium text-[var(--color-text-tertiary)];
+}
+
+.required {
+	@apply text-[var(--color-text-quaternary)] ml-0.5;
+}
+
+.input,
+.textarea {
+	@apply w-full rounded-[10px] border border-[var(--color-border-primary)] bg-[var(--color-bg-secondary)] px-3 py-2.5 text-[15px] font-medium text-[var(--color-text-primary)] placeholder:text-[var(--color-text-quaternary)] outline-none transition-colors;
+	@apply focus:border-white/20 focus:ring-1 focus:ring-white/10;
+}
+
+.textarea {
+	@apply min-h-[120px] resize-y;
+}
+
+.submit {
+	@apply mt-2 inline-flex h-11 items-center justify-center rounded-[10px] bg-[#e6e6e6] px-4 text-[15px] font-medium text-[var(--color-bg-primary)] shadow-[var(--shadow-stack-low)] transition-colors hover:bg-white;
+}
+
+.success {
+	@apply rounded-[10px] border border-[var(--color-border-primary)] bg-[var(--color-bg-secondary)] px-5 py-6 text-[15px] leading-relaxed text-[var(--color-text-tertiary)];
+}
+
+.success__title {
+	@apply mb-2 text-[18px] font-medium text-[var(--color-text-primary)];
+}

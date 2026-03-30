@@ -1,7 +1,6 @@
 import { type FC } from 'react'
 import Link from 'next/link'
-import { FaXTwitter } from 'react-icons/fa6'
-import { FaGithub, FaSlack, FaYoutube } from 'react-icons/fa'
+import { FaInstagram, FaLinkedin } from 'react-icons/fa'
 import Logo from './logo.svg'
 import { footerSections } from '@/lib/constant'
 import FooterSection from './footerSection'
@@ -21,19 +20,19 @@ const Footer: FC = () => {
 					</Link>
 
 					<div className={styles.social__icons}>
-						<Link href='#'>
-							<FaXTwitter />
+						<Link
+							href='https://www.linkedin.com/company/piazzaconsulting'
+							target='_blank'
+							rel='noopener noreferrer'
+							aria-label='Piazza Consulting Group on LinkedIn'>
+							<FaLinkedin />
 						</Link>
-						<Link href='#'>
-							<FaGithub />
-						</Link>
-
-						<Link href='#'>
-							<FaSlack />
-						</Link>
-
-						<Link href='#'>
-							<FaYoutube />
+						<Link
+							href='https://www.instagram.com/piazzaconsulting/'
+							target='_blank'
+							rel='noopener noreferrer'
+							aria-label='Piazza Consulting Group on Instagram'>
+							<FaInstagram />
 						</Link>
 					</div>
 				</div>
