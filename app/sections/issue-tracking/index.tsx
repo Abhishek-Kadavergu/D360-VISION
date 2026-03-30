@@ -25,16 +25,15 @@ const IssueTracking: FC = () => {
 				<div className={styles.heading__container}>
 					<div className={styles.heading__inner__container}>
 						<SectionHeading
-							heading='Issue tracking you’ll enjoy using'
-							badgeText='Task tracking and sprint planning'
+							heading='Advanced capabilities'
+							badgeText='Intelligence layer'
 							badgeStyle='bg-[#D4B144] border-none'
 						/>
 
 						<div>
 							<p>
-								<span>Optimized for speed and efficiency.</span> Create tasks in
-								seconds, discuss issues in context, and breeze through your work
-								in views tailored to you and your team.
+								<span>Speed. Accuracy. Scale.</span> Optimized for high-volume
+								enterprise workloads — consistent from first page to millionth.
 							</p>
 						</div>
 					</div>
@@ -54,13 +53,13 @@ const IssueTracking: FC = () => {
 				<BentoGrid>
 					<BentoGridTopLayer>
 						<BentoCardLeft
-							title='Build momentum with Cycles'
-							description='Create healthy routines and focus your team on what work should happen next.'>
+							title='Pipeline throughput'
+							description='Monitor volume, latency, and completion across AI stages.'>
 							<FirstCard />
 						</BentoCardLeft>
 						<BentoGridCardRight
-							title='Manage incoming work with Triage'
-							description='Review and assign incoming bug reports, feature requests, and other unplanned work.'>
+							title='Review queue'
+							description='Triage exceptions and edge cases before they hit downstream systems.'>
 							<SecondCard />
 						</BentoGridCardRight>
 					</BentoGridTopLayer>

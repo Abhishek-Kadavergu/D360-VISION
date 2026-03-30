@@ -23,28 +23,28 @@ const Header: FC = () => {
 							<li className={cn(styles.hide__mobile, styles.header__trigger)}>
 								<Link className={styles.header__link} href='#'>
 									{' '}
-									Features{' '}
+									Platform{' '}
 								</Link>
 							</li>
 
 							<li className={cn(styles.hide__laptop, styles.header__item)}>
 								<Link className={styles.header__link} href='#'>
 									{' '}
-									Method{' '}
+									Solutions{' '}
 								</Link>
 							</li>
 
 							<li className={cn(styles.hide__laptop, styles.header__item)}>
 								<Link className={styles.header__link} href='#'>
 									{' '}
-									Customers{' '}
+									Enterprise{' '}
 								</Link>
 							</li>
 
 							<li className={cn(styles.hide__tablet, styles.header__item)}>
 								<Link className={styles.header__link} href='#'>
 									{' '}
-									Changelog{' '}
+									Docs{' '}
 								</Link>
 							</li>
 
@@ -93,7 +93,7 @@ const Header: FC = () => {
 									className={cn(styles.header__link, styles.button__signup)}
 									href='#'>
 									{' '}
-									Sign up
+									Get Started
 								</Link>
 							</li>
 

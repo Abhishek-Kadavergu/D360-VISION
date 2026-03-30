@@ -14,12 +14,12 @@ export type FooterSection = {
 
 export const footerSections: FooterSection[] = [
 	{
-		title: 'Features',
+		title: 'Platform',
 		items: [
 			{
 				id: 'footer-section-11',
 				link: '#',
-				item: 'Integrations',
+				item: 'Capabilities',
 			},
 			{
 				id: 'footer-section-12',
@@ -34,17 +34,17 @@ export const footerSections: FooterSection[] = [
 			{
 				id: 'footer-section-14',
 				link: '#',
-				item: 'Docs',
+				item: 'Documentation',
 			},
 			{
 				id: 'footer-section-15',
 				link: '#',
-				item: 'Linear Method',
+				item: 'API reference',
 			},
 			{
 				id: 'footer-section-16',
 				link: '#',
-				item: 'Download',
+				item: 'Security',
 			},
 		],
 	},
@@ -54,7 +54,7 @@ export const footerSections: FooterSection[] = [
 			{
 				id: 'footer-section-21',
 				link: '#',
-				item: 'About us',
+				item: 'About',
 			},
 			{
 				id: 'footer-section-22',
@@ -74,7 +74,7 @@ export const footerSections: FooterSection[] = [
 			{
 				id: 'footer-section-25',
 				link: '#',
-				item: 'Brand',
+				item: 'Partners',
 			},
 		],
 	},
@@ -84,7 +84,7 @@ export const footerSections: FooterSection[] = [
 			{
 				id: 'footer-section-31',
 				link: '#',
-				item: 'Startup Program',
+				item: 'Support',
 			},
 			{
 				id: 'footer-section-32',
@@ -104,12 +104,12 @@ export const footerSections: FooterSection[] = [
 			{
 				id: 'footer-section-35',
 				link: '#',
-				item: 'Privacy Policy',
+				item: 'Privacy',
 			},
 			{
 				id: 'footer-section-36',
 				link: '#',
-				item: 'Terms of service',
+				item: 'Terms',
 			},
 			{
 				id: 'footer-section-37',
@@ -139,7 +139,7 @@ export const footerSections: FooterSection[] = [
 			{
 				id: 'footer-section-44',
 				link: '#',
-				item: 'README',
+				item: 'SDKs',
 			},
 		],
 	},
@@ -156,43 +156,39 @@ export type FoundationList = FoundationListItem[]
 export const foundationList: FoundationList = [
 	{
 		id: 'foundation-1',
-		label: 'Linear Sync Engine',
-		value:
-			'Built with a high-performance architecture and an obsessive focus on speed.',
+		label: 'Starter',
+		value: 'Explore core capabilities.',
 	},
 	{
 		id: 'foundation-2',
-		label: 'Enterprise-ready security',
-		value:
-			'Best-in-class security practices keep your work safe and secure at every layer.',
+		label: 'Professional',
+		value: 'Advanced AI with higher limits.',
 	},
 	{
 		id: 'foundation-3',
-		label: 'Engineered for scale',
-		value:
-			'Built for teams of all sizes. From early-stage startups to global enterprises.',
+		label: 'Enterprise',
+		value: 'Custom pipelines, SLA, dedicated infrastructure.',
 	},
 ]
 
 export const userCards: UserCardProps[] = [
 	{
 		id: 'user-card-1',
-		title: 'Users report unexpected rate limiting',
+		title: 'Multi-page policy pack — clauses need structured extraction',
 		img: '/user-1.png',
-		name: 'Tom',
+		name: 'Ops',
 	},
 	{
 		id: 'user-card-2',
-		title: 'RangeError: Index 0 out of range',
+		title: 'Handwritten fields detected on scanned intake form',
 		img: '/user-2.jpg',
-		name: 'Romain',
+		name: 'Claims',
 	},
 	{
 		id: 'user-card-3',
-		title:
-			'Pressing "Enter" quickly when logging in via email generates multiple emails',
+		title: 'Table-heavy invoice — line items must map to ledger schema',
 		img: '/user-3.jpg',
-		name: 'Tuomas',
+		name: 'Finance',
 	},
 ]
 
@@ -200,16 +196,61 @@ export const modernProductCards: CarouselCardProps[] = [
 	{
 		id: 'modern-carousel-card-1',
 		img: '/product-development.jpeg',
-		title: 'Purpose-built for product development',
+		title: 'Understands Data Like Humans',
+		description: 'Captures structure, relationships, and meaning — not just text.',
 	},
 	{
 		id: 'modern-carousel-card-2',
 		img: '/fast-moving.avif',
-		title: 'Designed to move fast',
+		title: 'OCR-Free Architecture',
+		description:
+			'No fragile pipelines. No rule-based limitations. Pure AI understanding.',
 	},
 	{
 		id: 'modern-carousel-card-3',
 		img: '/perfection.avif',
-		title: 'Crafted to perfection',
+		title: 'Built for Scale',
+		description:
+			'Process millions of documents with consistent accuracy.',
+	},
+]
+
+export type UseCaseCardProps = {
+	id: string
+	img: string
+	heading: string
+	body: string
+}
+
+export const useCaseCards: UseCaseCardProps[] = [
+	{
+		id: 'use-case-1',
+		img: '/collaborate-img1.avif',
+		heading: 'Financial Services',
+		body: 'Automate invoices, audits, and financial data extraction with precision.',
+	},
+	{
+		id: 'use-case-2',
+		img: '/collaborate-img1.avif',
+		heading: 'Healthcare',
+		body: 'Structure medical records and interpret complex reports.',
+	},
+	{
+		id: 'use-case-3',
+		img: '/collaborate-img1.avif',
+		heading: 'Insurance',
+		body: 'Process claims with contextual understanding — not rules.',
+	},
+	{
+		id: 'use-case-4',
+		img: '/collaborate-img1.avif',
+		heading: 'Legal',
+		body: 'Analyze contracts and extract clauses intelligently.',
+	},
+	{
+		id: 'use-case-5',
+		img: '/collaborate-img1.avif',
+		heading: 'Enterprise AI',
+		body: 'Power AI systems with clean, structured data pipelines.',
 	},
 ]

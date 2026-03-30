@@ -14,15 +14,14 @@ const Foundation: FC = () => {
 				<div className={styles.inner__container}>
 					<div className={styles.heading__container}>
 						<SectionHeading
-							badgeText='Under the hood'
-							heading='Built on strong foundations'
+							badgeText='Enterprise platform'
+							heading='Engineered for Enterprise Scale.'
 						/>
 
 						<p>
-							{' '}
-							Linear is so simple to use, it’s easy to overlook the wealth of
-							complex technologies packed under the hood that keep Linear
-							robust, safe, and blazing fast.{' '}
+							Distributed systems. High-throughput pipelines. Real-time
+							intelligence. Optimized for high-volume workloads. Simple APIs. Clean
+							workflows. Fast integration.
 						</p>
 					</div>
 

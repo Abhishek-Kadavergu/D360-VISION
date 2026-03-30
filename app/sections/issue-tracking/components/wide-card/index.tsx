@@ -11,12 +11,12 @@ const WideCard: FC = () => {
 			<div className={styles.heading__wrapper}>
 				<div className={styles.head__container}>
 					<BentoCardHeading
-						title='Linear Insights'
-						description='Take the guesswork out of product planning with realtime, actionable data analytics.'
+						title='Built for Developers'
+						description='Upload → Process → Receive structured output. Simple APIs. Clean workflows. Fast integration.'
 					/>
 
 					<Link href='/' className={styles.link}>
-						<span> Learn more </span>
+						<span> API docs </span>
 						<ChevronRight className='w-4 h-4' />
 					</Link>
 				</div>

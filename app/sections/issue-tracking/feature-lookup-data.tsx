@@ -1,32 +1,47 @@
 import { type FeatureLookupProps } from '@/components/bento-grid/components/bento-grid-feature-lookup-card'
-import Views from '@/assets/views.svg'
+import Insight from '@/assets/insight.svg'
+import Initiative from '@/assets/initiative.svg'
 import WorkFlow from '@/assets/workflow.svg'
-import Sla from '@/assets/sla.svg'
-import Filter from '@/assets/filter.svg'
+import Views from '@/assets/views.svg'
+import CrossTerm from '@/assets/cross-team.svg'
+import Secure from '@/assets/secure.svg'
 
 export const issueTrackingFeatureLookup: FeatureLookupProps[] = [
 	{
 		id: 'issue-tracking-feature-1',
-		title: 'Tailored workflows',
-		description: 'Track progress across custom issue flows for your team.',
-		icon: <WorkFlow />,
+		title: 'Intelligent Extraction',
+		description:
+			'Extract text, tables, forms, and visual elements with deep context.',
+		icon: <Insight />,
 	},
 	{
 		id: 'issue-tracking-feature-2',
-		title: 'Custom views',
-		description: 'Switch between list and board. Group issues with swimlanes.',
-		icon: <Views />,
+		title: 'Vision Language Models',
+		description: 'Understands structure and relationships natively.',
+		icon: <Initiative />,
 	},
 	{
 		id: 'issue-tracking-feature-3',
-		title: 'Filters',
-		description: 'Refine issue lists down to what’s most relevant to you.',
-		icon: <Filter />,
+		title: 'Real-Time Processing',
+		description: 'High-speed AI pipelines for instant results.',
+		icon: <WorkFlow />,
 	},
 	{
 		id: 'issue-tracking-feature-4',
-		title: 'SLAs',
-		description: 'Automatically apply deadlines to time-sensitive tasks.',
-		icon: <Sla />,
+		title: 'Structured Outputs',
+		description: 'Clean JSON and structured datasets ready for use.',
+		icon: <Views />,
+	},
+	{
+		id: 'issue-tracking-feature-5',
+		title: 'Seamless Integration',
+		description: 'Plug into existing systems via APIs.',
+		icon: <CrossTerm />,
+	},
+	{
+		id: 'issue-tracking-feature-6',
+		title: 'Enterprise Security',
+		description: 'Built with encryption, compliance, and secure pipelines.',
+		icon: <Secure />,
 	},
 ]

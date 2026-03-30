@@ -13,6 +13,10 @@
 	font-variation-settings: 'opsz' 28;
 }
 
+.subtext {
+	@apply mt-4 max-w-[36ch] text-[17px] leading-[24.5px] font-medium text-[var(--color-text-tertiary)];
+}
+
 .links__outter__container {
 	@apply flex items-end;
 }

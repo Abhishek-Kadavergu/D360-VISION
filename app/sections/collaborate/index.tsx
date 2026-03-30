@@ -11,17 +11,16 @@ const Collaborate: FC = () => {
 				<div className={styles.heading__container}>
 					<div className={styles.heading__inner__container}>
 						<SectionHeading
-							heading='Collaborate across tools and teams'
-							badgeText='Workflows and integrations'
+							heading='Built for Real-World Data Complexity.'
+							badgeText='Industries'
 							badgeStyle='bg-[#b59aff] border-none'
 						/>
 					</div>
 
 					<div className={styles.heading__text__container}>
 						<p>
-							Expand the capabilities of the Linear system with a wide variety
-							of integrations that keep everyone in your organization aligned
-							and focused.
+							<span>One intelligence engine.</span> From finance to healthcare,
+							D360 Vision turns messy inputs into reliable structured data.
 						</p>
 					</div>
 				</div>

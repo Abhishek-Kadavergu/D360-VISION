@@ -8,23 +8,23 @@ const updateCards: UpdateCardProps[] = [
 	{
 		id: 'update-card-1',
 		badge: <OffTrack />,
-		badgeTitle: 'Off track',
-		title: 'Unexpected roadblocks forced us to take a different…',
-		time: 'Oct 27',
+		badgeTitle: 'Needs review',
+		title: 'Low confidence on nested tables in appendix pages…',
+		time: 'Live',
 	},
 	{
 		id: 'update-card-2',
 		badge: <AtRisk />,
-		badgeTitle: 'At risk',
-		title: 'Progress slowed down last week because…',
-		time: 'Oct 27',
+		badgeTitle: 'Queued',
+		title: 'Handwritten amendments detected — routing to human review…',
+		time: 'Live',
 	},
 	{
 		id: 'update-card-3',
 		badge: <Electric />,
-		badgeTitle: 'On track',
-		title: 'We are ready to launch next Thursday',
-		time: 'Sep 8',
+		badgeTitle: 'Validated',
+		title: 'Structured JSON emitted to downstream API',
+		time: 'Now',
 	},
 ]
 

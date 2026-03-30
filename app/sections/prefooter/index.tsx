@@ -10,21 +10,23 @@ const PreFooter: FC = () => {
 				<div className={styles.grid__container}>
 					<div className=''>
 						<h3 className={styles.heading}>
-							Plan the present.
+							Stop Reading Data.
 							<br />
-							Build the future.
+							Start Understanding It.
 						</h3>
+						<p className={styles.subtext}>
+							Move beyond OCR and unlock true AI-powered intelligence with D360
+							Vision.
+						</p>
 					</div>
 
 					<div className={styles.links__outter__container}>
 						<div className={styles.links__inner__container}>
 							<Link className={styles.get__started__link} href='/'>
-								{' '}
-								Get Started{' '}
+								Request Demo
 							</Link>
 							<Link className={styles.talk__to__sales} href='/'>
-								{' '}
-								Talk to sales{' '}
+								Get Started
 							</Link>
 						</div>
 					</div>

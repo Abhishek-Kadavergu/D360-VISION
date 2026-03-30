@@ -1,33 +1,37 @@
-import { type FC } from 'react'
-import Image from 'next/image'
-import styles from './styles.module.css'
-import { Plus } from 'lucide-react'
+import { type FC } from "react";
+import Image from "next/image";
+import styles from "./styles.module.css";
+import { Plus } from "lucide-react";
 
 export type CarouselCardProps = {
-	id: string
-	img: string
-	title: string
-}
+  id: string;
+  img: string;
+  title: string;
+  description?: string;
+};
 
-const CarouselCard: FC<CarouselCardProps> = ({ img, title }) => {
-	return (
-		<div className={styles.carousel__card}>
-			<button className={styles.outter__container}>
-				<div className={styles.img__container}>
-					<Image src={img} alt='' width={960} height={914} />
-				</div>
-				<div className={styles.text__container}>
-					<div className={styles.title}>
-						<span> {title} </span>
-					</div>
+const CarouselCard: FC<CarouselCardProps> = ({ img, title, description }) => {
+  return (
+    <div className={styles.carousel__card}>
+      <button className={styles.outter__container}>
+        <div className={styles.img__container}>
+          <Image src={img} alt="" width={960} height={914} />
+        </div>
+        <div className={styles.text__container}>
+          <div className={styles.title}>
+            <span className={styles.title__line}> {title} </span>
+            {description ? (
+              <span className={styles.title__description}> {description} </span>
+            ) : null}
+          </div>
 
-					<div className={styles.icon__container}>
+          {/* <div className={styles.icon__container}>
 						<Plus />
-					</div>
-				</div>
-			</button>
-		</div>
-	)
-}
+					</div> */}
+        </div>
+      </button>
+    </div>
+  );
+};
 
-export default CarouselCard
+export default CarouselCard;

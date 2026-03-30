@@ -20,8 +20,16 @@
 	@apply flex justify-between items-center w-full;
 }
 
-.text__container .title span {
-	@apply inline-block text-[var(--color-text-primary)] text-balance align-top;
+.text__container .title {
+	@apply flex flex-col gap-1 items-start text-left;
+}
+
+.text__container .title .title__line {
+	@apply block text-[var(--color-text-primary)] text-balance;
+}
+
+.text__container .title .title__description {
+	@apply block text-[13px] leading-[18px] font-medium text-[var(--color-text-tertiary)] text-balance max-w-[22ch];
 }
 
 .text__container .icon__container {

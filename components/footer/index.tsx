@@ -16,8 +16,8 @@ const Footer: FC = () => {
 						<span className={styles.logo}>
 							<Logo />
 						</span>
-						<span> Linear </span>
-						<span className={styles.hide__mobile}> - Designed Worldwide </span>
+						<span> D360 Vision </span>
+						<span className={styles.hide__mobile}> — Enterprise AI </span>
 					</Link>
 
 					<div className={styles.social__icons}>

@@ -9,17 +9,17 @@ const Menu: FC = () => {
 		<div className={styles.menu}>
 			<div className={styles.menu__item}>
 				<Accept />
-				<span className={styles.menu__item__text}> Accept </span>
+				<span className={styles.menu__item__text}> Approve </span>
 			</div>
 
 			<div className={styles.menu__item}>
 				<Copy />
-				<span className={styles.menu__item__text}> Mark as duplicate </span>
+				<span className={styles.menu__item__text}> Merge duplicate </span>
 			</div>
 
 			<div className={styles.menu__item}>
 				<Decline />
-				<span className={styles.menu__item__text}> Decline </span>
+				<span className={styles.menu__item__text}> Reject </span>
 			</div>
 		</div>
 	)
