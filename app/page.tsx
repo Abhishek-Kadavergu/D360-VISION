@@ -21,6 +21,18 @@ const Home: FC = () => {
       <Collaborate />
       {/* <Foundation /> */}
       <PreFooter />
+      
+      {/* Powered By Section */}
+      <section className="flex flex-col items-center justify-center pt-16 pb-32 w-full">
+        <p className="text-white text-sm md:text-base font-medium tracking-[0.2em] opacity-60 mb-6 uppercase">
+          Powered By
+        </p>
+        <img 
+          src="/piazza-logo-bg.png" 
+          alt="Powered by Piazza" 
+          className="w-auto h-16 md:h-24 lg:h-32 object-contain opacity-90"
+        />
+      </section>
     </main>
   );
 };
