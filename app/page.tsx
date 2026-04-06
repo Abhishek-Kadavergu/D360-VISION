@@ -1,5 +1,6 @@
 import { type FC } from "react";
 import Hero from "./sections/hero";
+import VideoSection from "./sections/video";
 import Customers from "./sections/customers";
 import ModernProductTeams from "./sections/modern-product-teams";
 import LongTermPlanning from "./sections/long-term-planning";
@@ -14,6 +15,7 @@ const Home: FC = () => {
     <main className=" min-h-screen pt-[calc(var(--header-top)+var(--header-height))]">
       <AmbientLighting />
       <Hero />
+      <VideoSection />
       <Customers />
       <ModernProductTeams />
       <LongTermPlanning />
